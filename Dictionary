@@ -1,0 +1,40 @@
+## define a dictionary
+students = {
+    "name": "John",
+    "age": 20,
+    "height": 1.75,
+    "grades": [85, 90, 92]
+}
+
+# Access value by key
+print("name",students["name"])
+print("age",students["age"])
+
+# adda a new key value pair
+students["gender"] = "male"
+print("After adding gender:", students)
+
+# update value
+students["gender"] = "female"
+print("After updating gender: ",students)
+
+# Remove a key value pair
+students.pop("age")
+print("After removing age: ",students)
+
+# Get all values
+values = students.values()
+print("All Values:", values)
+
+# iterate through dictioinary items
+print("Dictionary items:")
+for a, b in students.items():
+    print(f"{a}>>{b}")
+
+# copy a dictionary
+students_copy = students.copy()
+print("Copied Dictionary:", students_copy)
+
+# cleat the doctionary
+students.clear()
+print("After clearing the dictionary: ", students)
